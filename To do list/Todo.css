@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: linear-gradient(120deg, #dfbb45, #fde785);
+    color: white;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 1.5rem;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form input{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: None;
+    background: white;
+  }
+  form button {
+    color: #fda085;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: None;
+  }
+  
+  form button:hover {
+    background: #fda085;
+    color: whitesmoke;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 0.5rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    text-overflow: ellipsis;
+  }
+  
+  .todo li {
+    flex: 1;
+    text-overflow: clip;
+  }
+  
+  .del-btn,
+  .complete-btn {
+    background: #f14212;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background: rgb(50, 221, 50);
+  }
+  
+  .todo-item {
+    padding: 0rem 0.5rem;
+  }
+
+  .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+      background: rgb(54, 212, 75);
+  }
+ 
+
