@@ -13,7 +13,7 @@ function addTodo(event) {
     const newToDo = document.createElement('li');
     newToDo.innerText = todoInput.value;
     newToDo.classList.add('todo-item');
-    todoDiv.appendChild(ne2wToDo);
+    todoDiv.appendChild(newToDo);
 
     const completed = document.createElement('button');
     completed.innerHTML = "<i class='fas fa-check'></i>";
@@ -41,3 +41,4 @@ function deleteCheck(event) {
         todo.classList.toggle('completed');
     }
 }
+
