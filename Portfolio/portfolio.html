@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="portfolio.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="window">
@@ -19,8 +20,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about-link">About</a></li>
+            <li><a href="#contact-link">Contact</a></li>
         </ul>
         </div>
     </div>
@@ -29,7 +30,7 @@
     <div class="jumbotron">
         <h1>My Portfolio</h1>      
         <div class="container text-center">
-            <div class="horizontal-flex">
+            <div class="flex-container">
             <img src="Parth.jpg" width="180rem">
             <p>I am Parth Nanda, first year undergarduate in IIT Kharagpur studying Industrial and System Engineering. My intersts lie in competetive coding, web development, android development and Finance.Some of other hobbies are playing Badminton, Gymming and I am learning guitar too.</p>
             </div>
@@ -38,7 +39,7 @@
 
     <div class="jumbotron">
         <h1>Some of my Work</h1><br>
-        <div class="horizontal-flex">
+        <div class="flex-container">
             <div class="box">
                 <a href="https://github.com/parthn2/Webdev/blob/main/2_15squares" style="font-size: 40px;">15 Square Game</a>
                 <p style="font-size: 20px;">A website game which allows the player to dynamically change the size of the board and maintains
@@ -60,11 +61,34 @@
         </div>
     </div>
     
-    <hr>
+    <div class="jumbotron" id="about-link" style="text-align: left;">
+        <h1>About</h1><br>
+        <div class="vertical-flex">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <p style="padding: 0%;font-size:3rem">High School Education</p>
+            </button>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>Apeejay School, Jalandhar - Class 12:95% - JEE Mains: 9762 Rank out of 11 lakh students - Jee Advanced - 3762 Rank out of 2.5 lakh students</p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                <p style="padding: 0%;font-size:3rem">Btech</p>
+            </button>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                    <p>IIT Kharagpur - Associate Member in Communique - Associate Member in Student Welfare Society - Part of Team which won 3rd position in a case study competition - “How to open IIT Kgp”</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 <footer>
-    <div class="horizontal-flex">
+    <div class="horizontal-flex" id="contact-link">
         <div class ="link"><a href="https://www.linkedin.com/in/parth-nanda-5012801bb"><img src="linkedin.png"></a></li></div>
         <div class ="link"><a href="mailto:parthnanda002@gmail.com"><img src="gmail.png"></a></li></div>
         <div class ="link"><a href="https://github.com/parthn2"><img src="github.png"></a></li></div>
