@@ -1,28 +1,78 @@
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+@media only screen and (min-width: 950px){
+    .window{
+        padding-left: 10%;
+        padding-right:10%;
+    }
+}
+
+.container-fluid{
+    background-color: grey;      
+}
+
+h1{
+    text-align:center;
     }
 
-    @media only screen and (min-width: 950px){
-        .window{
-            padding-left: 10%;
-            padding-right:10%;
-        }
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+    align-items: center;
+}
+
+.horizontal-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.link{
+    padding : 15px;
+}
+
+.link img{
+    width : 30px;
+}
+
+.link img:hover{
+    /* background-color: #000; */
+    animation:fade-in 0.5s;
+    /* background: white; */
+    box-shadow: 10 10 50px #000000;
+
+}
+
+@keyframes fade-in
+{
+    from
+    {
+        /* opacity: 0; */
+        width: 45px;
     }
-
-    .container-fluid{
-        background-color: grey;      
+    to
+    {
+        /* opacity: 1; */
+        width: 50px;
     }
+}
 
-    h1{
-        text-align:center;
-        }
+p{
+    padding: 10px;
+}
 
-    /* Add a gray background color and some padding to the footer */
-    footer {
-        background-color: #f2f2f2;
-        padding: 25px;
-        text: bottom;
+.box{
+    padding:3rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    box-shadow: 1px;
+    margin: 5px;
+}
 
-    }
+a{
+    text-decoration: none;
+}
