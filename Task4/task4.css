@@ -1,0 +1,50 @@
+.content{
+    margin: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.Heading{
+    color:red;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+}
+
+.maincontent{
+    text-align: center;
+    min-width: 960px;
+
+}
+
+.flex-box{
+    display: flex;
+    text-align: center;
+    padding-left: 25rem;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer{
+    margin-top: 12rem;
+    background-color: #1f858f;
+    display: flex;
+    position: absolute;
+    width: 100%;;
+}
+
+.first{
+    text-align: left;
+    min-width: 960px;
+}
+
+.footer_first{
+    padding: 30px 30px 30px 17%;
+}
+
+.footer_second{
+    display: block;
+    padding: 30px 60px 3px ;
+}
