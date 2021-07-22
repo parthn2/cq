@@ -84,8 +84,7 @@ a{
 
 @media only screen 
 and (max-width: 920px)
-and (min-device-width: 375px) 
- {
+{
     .content{
         margin: 10rem;
         margin-top: 2rem;
