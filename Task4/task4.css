@@ -2,6 +2,8 @@
     margin: 10rem;
     margin-top: 2rem;
     margin-bottom: 0rem;
+    min-width: 960px;
+
 }
 
 .Heading{
@@ -12,8 +14,7 @@
 
 .maincontent{
     text-align: center;
-    min-width: 960px;
-
+    position: absolute;
 }
 
 .flex-box{
@@ -29,10 +30,16 @@ a{
 
 .footer{
     margin-top: 12rem;
+    position: absolute;
+}
+
+.footer_down{
     background-color: #1f858f;
     display: flex;
     position: absolute;
     width: 100%;;
+    min-width: 1200px;
+    margin-top: 20px;
 }
 
 .first{
@@ -47,4 +54,14 @@ a{
 .footer_second{
     display: block;
     padding: 30px 60px 3px ;
+}
+
+.dark_footer
+{
+    background-color: #156068;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    min-width: 1200px;
 }
